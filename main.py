@@ -33,11 +33,11 @@ async def emtest(interaction: discord.Interaction):
     color=discord.Color.blue()
 )
 
-embed.add_field(name="Status", value="All Services operational", inline=True)
-embed.add_field(name="Servers", value="1", inline=True)
-embed.set_footer(text="NoxiBkt")
+    embed.add_field(name="Status", value="All Services operational", inline=True)
+    embed.add_field(name="Servers", value="1", inline=True)
+    embed.set_footer(text="NoxiBkt")
 
-await interaction.response.send_message(embed=embed)
+    await interaction.response.send_message(embed=embed)
 
 @bot.command()
 async def ping(ctx):
