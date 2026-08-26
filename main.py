@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix="_", intents=discord.Intents.default())
+bot = commands.Bot(command_prefix="_", intents=discord.Intents.message_content())
 
 @bot.event
 async def on_ready():
