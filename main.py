@@ -12,7 +12,6 @@ async def on_ready():
 @bot.tree.command(name="ping")
 async def slash_ping(interaction: discord.Interaction):
     await interaction.response.send_message("Pong!")
-    await print("test")
 
 @bot.command()
 async def ping(ctx):
